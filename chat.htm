@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>NRMSLib</title>
+<script type="text/javascript" src="NRMSLib.js"></script>
+</head>
+
+<body>
+
+	<div id="test_id"></div>
+    
+    <script type="text/javascript">
+	///////////////////////////
+	//можно вызывать снова если назначить новый id для чата
+	///////////////////////////
+	
+	//создание чата
+		modules.chat.start({
+				'setid': 'modules_chat', //назначем id чата чтобы при необходимости можно было управлять чатом
+				'border': '#FF6600', //цвет бордюра рамки чата
+				'sizeborder': 1, //размер бордюра, можно указать 0 чтобы бордюра не было видно
+				'width': 550, //ширина чата занимаемая на сайте
+				'height': 450, //высота чата занимаемая на сайте
+				'leftwidth': 550, //ширина левой панели в чате
+				'leftheight': 450, //высота левой панели в чате
+				'rightheight': 450, //высота правой панели в чате
+				'insert': 'test_id', //куда вставляется чат, если указано body значит в документ, но вместо body можно указать id элемента в который будет помещен чат
+				'borders': '#FF6600', //цвет бордюров внутри чата
+				'chatcolor': '#FFFFFF', //цвет фона панелей чата где сообщения и ники
+				'color': '#FFFFFF' //цвет остального фона в чате
+			});
+	
+	//можно запускать и так
+	//modules.chat.start();
+	
+	//или даже так
+	//modules.chat.start({});
+	
+	//можно писать не все параметры, обратите внимание что в конце последнего параметра запятую ставить не нужно
+	/*
+	modules.chat.start({
+				'insert': 'body' //куда вставляется чат, если указано body значит в документ, но вместо body можно указать id элемента в который будет помещен чат
+			});
+	*/
+	</script>
+
+</body>
+</html>

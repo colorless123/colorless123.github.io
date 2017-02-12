@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>NRMSLib</title>
+<script type="text/javascript" src="NRMSLib.js"></script>
+</head>
+
+<body bgcolor="#000000">
+
+	<div id="test_id"></div>
+    
+    <script type="text/javascript">
+	///////////////////////////
+	//можно вызывать повторно если отключен повтор и эффект завершил работу
+	///////////////////////////
+	
+	//печать текста как в матрице
+		effect.matrixtext.start({
+				'delay': 6, // число мигания курсора умноженное на 2
+				'speed': [100,300], //скорость печати букв от 100 до 300
+				'symbol': '|', //символ курсора
+				'color': '#FF6600', //цвет текста
+				'insert': 'test_id', //куда вставляется текст, если указано body значит в документ, но вместо body можно указать id элемента в котором будет печататься текст
+				'text': ['Wake up, Neo... ','The Matrix has you... ','Follow the White Rabbit. ','Knock, knock, Neo.   '], //печатаемый текст по порядку, можно указать и так ['Wake up, Neo... ']
+				'repeat': false //повторение печати, если true то печать будет повторятся, если false то печатать будет 1 раз
+			});
+	
+	//можно запускать и так
+	//effect.matrixtext.start();
+	
+	//или даже так
+	//effect.matrixtext.start({});
+	
+	//можно писать не все параметры, обратите внимание что в конце последнего параметра запятую ставить не нужно
+	/*
+	effect.matrixtext.start({
+				'color': '#FF6600' //цвет текста
+			});
+	*/
+	</script>
+
+</body>
+</html>

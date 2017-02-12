@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>NRMSLib</title>
+<script type="text/javascript" src="NRMSLib.js"></script>
+</head>
+
+<body>
+    
+    <script type="text/javascript">
+	///////////////////////////
+	//можно вызывать снова если эффект завершил работу
+	///////////////////////////
+	
+	//предзагрузка изображений и сайта
+		effect.loading.start({
+				'images': [], //можно указать адреса картинок которые необходимо загрузить прежде чем покажется сайт, например ['0001.gif','0002.gif','0003.gif']
+				'color': '#000000', //фоновый цвет панели загрузки
+				'textcolor': '#555555', //цвет текста
+				'text': 'Идет загрузка, ждите...', //текст выводимый во время загрузки
+				'step': 15, //скорость движения
+				'speed': 10, //скорость таймера
+				'delay': 1000 //задержка показа загрузки
+			});
+	
+	//можно запускать и так
+	//effect.loading.start();
+	
+	//или даже так
+	//effect.loading.start({});
+	
+	//можно писать не все параметры, обратите внимание что в конце последнего параметра запятую ставить не нужно
+	/*
+	effect.loading.start({
+				'text': 'Идет загрузка, ждите...' //текст выводимый во время загрузки
+			});
+	*/
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>NRMSLib</title>
+<script type="text/javascript" src="NRMSLib.js"></script>
+</head>
+
+<body>
+    
+    <script type="text/javascript">
+	///////////////////////////
+	//можно вызывать снова если эффект завершил работу и панель была закрыта
+	///////////////////////////
+	
+	//показ изображения
+		effect.showimage.start({
+				'width': 0, //ширина вставляемого изображения, если указано 0 значит размер определится автоматически
+				'height': 0, //высота вставляемого изображения, если указано 0 значит размер определится автоматически
+				'color': '#555555', //цвет фона панели
+				'image': '1.jpg', //адрес на изображение
+				'full': true //если указано true значит панель растягивается на полный размер сайта, если указано false панель растягивается только на рабочую область экрана
+			});
+	
+	//можно запускать и так
+	//effect.showimage.start();
+	
+	//или даже так
+	//effect.showimage.start({});
+	
+	//можно писать не все параметры, обратите внимание что в конце последнего параметра запятую ставить не нужно
+	/*
+	effect.showimage.start({
+				'image': '1.jpg' //адрес на изображение
+			});
+	*/
+	</script>
+
+</body>
+</html>
